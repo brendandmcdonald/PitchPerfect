@@ -197,7 +197,7 @@
                                     <backgroundConfiguration key="background" image="Stop"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="stopButtonPressed:" destination="xak-hg-JpK" eventType="touchUpInside" id="5gi-iQ-nEq"/>
+                                    <action selector="stopButtonPressed:" destination="xak-hg-JpK" eventType="touchUpInside" id="i7D-8y-5Nm"/>
                                 </connections>
                             </button>
                         </subviews>
