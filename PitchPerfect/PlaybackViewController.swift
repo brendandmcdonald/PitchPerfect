@@ -30,7 +30,7 @@ class PlaybackViewController: UIViewController {
 
     // I probably should rename these to follow my convention and not the Udacity convention
     enum ButtonType: Int {
-        case slow = 0, fast, chipmunk, vader, echo, reverb
+        case normal = 0, slow, fast, highPitch, lowPitch, echo, reverb
     }
 
     override func viewDidLoad() {
@@ -56,11 +56,22 @@ class PlaybackViewController: UIViewController {
     // MARK: - Action
     
     @IBAction func playSoundForButton(_ sender: UIButton){
-        print("Play sound button pressed")
+        // print("Play sound button pressed")
+        switch(ButtonType(rawValue: sender.tag)!) {
+            case .normal: playSound(rate: 1.0)
+            case .slow: playSound(rate: 0.5)
+            case .fast: playSound(rate: 1.5)
+            case .highPitch: playSound(pitch: 1000)
+            case .lowPitch: playSound(pitch: -1000)
+            case .echo: playSound(echo: true)
+            case .reverb: playSound(reverb: true)
+            }
+        configureUI(.playing)
     }
     
     @IBAction func stopButtonPressed(_ sender: AnyObject){
         print("Stop button pressed")
+        stopAudio()
     }
     
 }
