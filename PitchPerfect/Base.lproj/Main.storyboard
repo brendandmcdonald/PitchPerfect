@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="usx-51-hWK" userLabel="Play button stack view">
-                                <rect key="frame" x="135.66666666666666" y="91" width="104" height="123.33333333333331"/>
+                                <rect key="frame" x="135.66666666666666" y="103" width="104" height="123.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play normally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg5-v5-jm8">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="19.333333333333332"/>
@@ -102,27 +102,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Joz-CH-Ijc" userLabel="Playback Effects Stack View">
-                                <rect key="frame" x="16" y="238.33333333333334" width="343" height="435.66666666666663"/>
+                                <rect key="frame" x="16" y="250.33333333333334" width="343" height="423.66666666666663"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Sm-N3-baS">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QiG-Wd-EkL">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="25.333333333333332"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play with effects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgb-VD-kXS">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="25.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play with effects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgb-VD-kXS">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XIr-6r-f9f">
-                                        <rect key="frame" x="0.0" y="25.333333333333343" width="343" height="137"/>
+                                        <rect key="frame" x="0.0" y="24.666666666666657" width="343" height="133"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkT-Uz-t2x" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="137"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Slow"/>
                                                 <connections>
@@ -130,7 +122,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-Sv-8WD" userLabel="Fast Button">
-                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="137"/>
+                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
                                                 <connections>
@@ -140,10 +132,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-Cq-w2M">
-                                        <rect key="frame" x="0.0" y="162.33333333333337" width="343" height="136.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="157.66666666666666" width="343" height="132.99999999999997"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaD-8J-vV9" userLabel="High Pitch Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="136.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
                                                 <connections>
@@ -151,7 +143,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-dz-Vbf" userLabel="Low Pitch Button">
-                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="136.66666666666666"/>
+                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
                                                 <connections>
@@ -161,10 +153,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nyn-EI-7Wm">
-                                        <rect key="frame" x="0.0" y="299" width="343" height="136.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="290.66666666666663" width="343" height="133"/>
                                         <subviews>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YJ-Zh-YMK" userLabel="Reverb Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="136.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
                                                 <connections>
@@ -172,7 +164,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDT-Fk-xzf" userLabel="Echo Button">
-                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="136.66666666666666"/>
+                                                <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="133"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
                                                 <connections>
@@ -201,7 +193,7 @@
                         <constraints>
                             <constraint firstItem="qT7-6w-ceB" firstAttribute="top" secondItem="Joz-CH-Ijc" secondAttribute="bottom" constant="8" id="AIN-Q7-DHF"/>
                             <constraint firstItem="usx-51-hWK" firstAttribute="centerX" secondItem="Q22-gw-iWi" secondAttribute="centerX" id="CCQ-Ah-6xp"/>
-                            <constraint firstItem="usx-51-hWK" firstAttribute="top" secondItem="NrX-3m-T32" secondAttribute="top" id="CXs-Ia-gSk"/>
+                            <constraint firstItem="usx-51-hWK" firstAttribute="top" secondItem="NrX-3m-T32" secondAttribute="top" constant="12" id="CXs-Ia-gSk"/>
                             <constraint firstItem="NrX-3m-T32" firstAttribute="bottom" secondItem="qT7-6w-ceB" secondAttribute="bottom" constant="16" id="EL5-SP-5Xx"/>
                             <constraint firstItem="NrX-3m-T32" firstAttribute="trailing" secondItem="Joz-CH-Ijc" secondAttribute="trailing" constant="16" id="Msp-bd-gJq"/>
                             <constraint firstItem="Joz-CH-Ijc" firstAttribute="leading" secondItem="NrX-3m-T32" secondAttribute="leading" constant="16" id="gaE-fY-aGA"/>
